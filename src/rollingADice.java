@@ -4,7 +4,9 @@ import java.util.Scanner;
 public class rollingADice {
     public static void main(String[] args) {
 
+
         System.out.println("Welcome to java dice rolling program");
+        
         System.out.print("Do you want to roll the dice[Y/N]? ");
         Scanner userInput1 = new Scanner(System.in);
         char c1 = userInput1.next().charAt(0);
@@ -17,7 +19,7 @@ public class rollingADice {
         } else if (c1 == 'n' || c1 == 'N') {
             System.out.println("Ok, program ended!");
         } else {
-            System.out.println("Entere");
+            System.out.println("Invalid input");
         }
 
     }
@@ -37,8 +39,11 @@ class rollTheDice {
         if (c2 == 'y' || c2 == 'Y') {
 
             this.roll();
-        } else {
+        } else if(c2 == 'n' || c2 == 'N'){
             System.out.println("Thanks for using the program");
+        }
+        else{
+            System.out.println("Invalid Input");
         }
     }
 }
